@@ -6,7 +6,7 @@ function Home() {
     const DASHBOARD = `${BASE}assets/dashboard.png`;
     const SOLO = `${BASE}/assets/soloImg.png`;
     const ICON = `${BASE}/assets/Icon.svg`;
-    const video_img = `/${BASE}assets/video-img.png`;
+    const video_img = `${BASE}/assets/video-img.png`;
     return (
         <>
             <section className="banner-section">
@@ -23,7 +23,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="video-section" tyle={{ backgroundImage: `url(${video_img})` }}>
+            <section className="video-section" style={{ backgroundImage: `url(${video_img})` }}>
                 <div className="container">
                     <div className="spacer"></div>
                 </div>
