@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary-color: #FFCC86;
+  --priamry-text-color: #4A5565;
+  --secondary-text-color: #333333;
+  --background-color: #4A66D6;
+  --primary-font: 'Inter', sans-serif;
+  --secondary-font: "Caveat", cursive;
+  --primary-background-gradient: linear-gradient(44.81deg, rgba(255, 248, 233, 0.5372) 55.17%, rgba(255, 255, 255, 0.6794) 95.1%);
+  --font-size: 16px;
+  --line-height:24px;
+  --font-weight:400;
+  --margin-bottom:24px;
+}
+section .container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+
