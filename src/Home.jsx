@@ -2,6 +2,10 @@ import Marquee from "./Components/Marquee";
 import UpperAppLogo from "./Components/UpperAppLogo";
 
 function Home() {
+    const BASE = import.meta.env.BASE_URL;
+    const DASHBOARD = `${BASE}assets/dashboard.png`;
+    const SOLO = `${BASE}/assets/soloImg.png`;
+    const ICON = `${BASE}/assets/Icon.svg`;
     return (
         <>
             <section className="banner-section">
@@ -45,7 +49,7 @@ function Home() {
             </section>
             <section className="dashboard-section">
                 <div className="container">
-                    <img className="w-full" src="/assets/dashboard.png" alt="" />
+                    <img className="w-full" src={DASHBOARD} alt="" />
                 </div>
             </section>
             <section className="solo-section">
@@ -57,7 +61,7 @@ function Home() {
                             <a className="pt-3 pb-3 pl-9 pr-9 primary-btn" href="#">Get Started</a>
                         </div>
                         <div>
-                            <img src="/assets/soloImg.png" alt="" />
+                            <img src={SOLO} alt="" />
                         </div>
                     </div>
                 </div>
@@ -68,7 +72,7 @@ function Home() {
                     <div className="works-conatainer grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-[997px] mx-auto">
                         <div className="work-wrapper">
                             <div class="relative w-[124px] h-[124px] rounded-[50%] border-white/10 bg-white/10  flex items-center justify-center top-circle">
-                                <img src="/assets/Icon.svg" alt="Connect" class=" w-10 h-10 " />
+                                <img src={ICON} alt="Connect" class=" w-10 h-10 " />
                             </div>
                             <div className=" relative w-[199px] h-[199px] bottom-circle rounded-[50%] border-white/10 bg-white/10 items-center flex justify-center text-center" >
                                 <h5 className="text-white mb-4">Connect</h5>
@@ -76,8 +80,8 @@ function Home() {
                             </div>
                         </div>
                         <div className="work-wrapper">
-                            <div class="relative w-[124px] h-[124px] rounded-[50%] border-white/10 bg-white/10  flex items-center justify-center top-circle">
-                                <img src="/assets/Icon.svg" alt="Connect" class=" w-10 h-10 " />
+                            <div className="relative w-[124px] h-[124px] rounded-[50%] border-white/10 bg-white/10  flex items-center justify-center top-circle">
+                                <img src={ICON} alt="Connect" className=" w-10 h-10 " />
                             </div>
                             <div className=" relative w-[199px] h-[199px] bottom-circle rounded-[50%] border-white/10 bg-white/10 items-center flex justify-center text-center" >
                                 <h5 className="text-white mb-4">Pull</h5>
@@ -85,8 +89,8 @@ function Home() {
                             </div>
                         </div>
                         <div className="work-wrapper">
-                            <div class="relative w-[124px] h-[124px] rounded-[50%] border-white/10 bg-white/10  flex items-center justify-center top-circle">
-                                <img src="/assets/Icon.svg" alt="Connect" class=" w-10 h-10 " />
+                            <div className="relative w-[124px] h-[124px] rounded-[50%] border-white/10 bg-white/10  flex items-center justify-center top-circle">
+                                <img src={ICON} alt="Connect" className="w-10 h-10" />
                             </div>
                             <div className=" relative w-[199px] h-[199px] bottom-circle rounded-[50%] border-white/10 bg-white/10 items-center flex justify-center text-center" >
                                 <h5 className="text-white mb-4">Plan</h5>
