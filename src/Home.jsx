@@ -107,7 +107,7 @@ function Home() {
                     {/* col-4 (left) */}
                     <div className="col-span-12 md:col-span-4">
                         <h2 className="text-black">
-                            Why <span className="bg-yellow-200 px-1">Taskory</span>
+                            Why <span>Taskory</span>
                         </h2>
                     </div>
 
