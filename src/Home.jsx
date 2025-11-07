@@ -7,7 +7,7 @@ function Home() {
     const DASHBOARD = `${BASE}assets/dashboard.png`;
     const SOLO = `${BASE}/assets/soloImg.png`;
     const ICON = `${BASE}/assets/Icon.svg`;
-    const video_img = `${BASE}/gitassets/video-img.png`;
+    const video_img = `${BASE}/assets/video-img.png`;
     return (
         <>
             <section className="banner-section">

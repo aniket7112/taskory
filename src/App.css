@@ -134,10 +134,10 @@ p{
     z-index: 9;
 }
 .why-section h2 span:before{
-  background-image: url(assets/whytext-bg.png)!important;
+  background-image: url(/assets/whytext-bg.png)!important;
 }
 .app-container .content h2 span:before, .solo-section h2 span:before, .why-section h2 span:before {
-    background-image: url(assets/subheading_bg.png);
+    background-image: url(/assets/subheading_bg.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
