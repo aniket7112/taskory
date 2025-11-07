@@ -103,7 +103,7 @@ function Home() {
                 </div>
             </section>
             <section className="why-section py-12 overflow-x-clip">  {/* prevents page scrollbar */}
-                <div className="mx-auto max-w-[1280px] px-4 grid grid-cols-12 items-center">
+                <div className="mx-auto max-w-7xl px-4 grid grid-cols-12 items-center">
 
                     {/* col-4 (left) */}
                     <div className="col-span-12 md:col-span-4">
