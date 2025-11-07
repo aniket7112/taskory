@@ -68,7 +68,7 @@ function Home() {
                 </div>
             </section>
             <section className="works-section">
-                <div className="container">
+                <div className="mx-auto max-w-[1280px]">
                     <h2 className="mb-15 text-center text-white">How Taskory Works</h2>
                     <div className="works-conatainer grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-[997px] mx-auto">
                         <div className="work-wrapper">
