@@ -101,20 +101,30 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="why-section">
-                <div className="container">
-                    <div className="grid grid-cols-12">
-                        <div className="col-span-12 md:col-span-4">
-                            <h2 className="text-black">Why <span>Taskory</span></h2>
-                        </div>
-                        <div className="col-span-12 md:col-span-8">
-                            <div className="w-full md:mr-[calc(50%-50vw)] md:pr-[calc(50%-50vw)] overflow-hidden">
-                                <Marquee />
-                            </div>
+            <section className="why-section py-12 overflow-x-clip">  {/* prevents page scrollbar */}
+                <div className="mx-auto max-w-[1280px] px-4 grid grid-cols-12 items-center">
+
+                    {/* col-4 (left) */}
+                    <div className="col-span-12 md:col-span-4">
+                        <h2 className="text-black">
+                            Why <span className="bg-yellow-200 px-1">Taskory</span>
+                        </h2>
+                    </div>
+
+                    {/* col-8 (right) */}
+                    <div className="col-span-12 md:col-span-8 min-w-0">
+                        {/* bleed to viewport edge, but clip inside the section so no x-scroll */}
+                        <div className="md:mr-[calc(50%-50vw)] md:pr-[calc(50%-50vw)] overflow-hidden">
+                            <Marquee />
                         </div>
                     </div>
+
                 </div>
             </section>
+
+
+
+
         </>
     );
 }
