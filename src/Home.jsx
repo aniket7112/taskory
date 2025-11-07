@@ -1,5 +1,7 @@
 import Marquee from "./Components/Marquee";
+import Tabs from "./Components/Tabs";
 import UpperAppLogo from "./Components/UpperAppLogo";
+import WhyLowerSlider from "./Components/WhyLowerSlider";
 import WhyUpperSlider from "./Components/WhyUpperSlider";
 
 function Home() {
@@ -73,7 +75,7 @@ function Home() {
                     <h2 className="mb-15 text-center text-white">How Taskory Works</h2>
                     <div className="works-conatainer grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-[997px] mx-auto">
                         <div className="work-wrapper">
-                            <div class="relative w-[124px] h-[124px] rounded-[50%] border-white/10 bg-white/10  flex items-center justify-center top-circle">
+                            <div className="relative w-[124px] h-[124px] rounded-[50%] border-white/10 bg-white/10  flex items-center justify-center top-circle">
                                 <img src={ICON} alt="Connect" className="w-10 h-10" />
                             </div>
                             <div className=" relative w-[199px] h-[199px] bottom-circle rounded-[50%] border-white/10 bg-white/10 items-center flex justify-center text-center" >
@@ -103,7 +105,7 @@ function Home() {
                 </div>
             </section>
             <section className="why-section py-12 overflow-x-clip">  {/* prevents page scrollbar */}
-                <div className="mx-auto max-w-7xl px-4 grid grid-cols-12 items-center">
+                <div className="mx-auto max-w-7xl px-4 grid grid-cols-12 items-center mb-10">
 
                     {/* col-4 (left) */}
                     <div className="col-span-12 md:col-span-4">
@@ -118,13 +120,26 @@ function Home() {
                         <div className="md:mr-[calc(50%-50vw)] md:pr-[calc(50%-50vw)] overflow-hidden">
                             <WhyUpperSlider />
                         </div>
-                        
+                    </div>
+
+                </div>
+                <div className="mx-auto max-w-7xl px-4 grid grid-cols-12 items-center">
+                    {/* col-8 (right) */}
+                    <div className="col-span-12 md:col-span-12 min-w-0">
+                        {/* bleed to viewport edge, but clip inside the section so no x-scroll */}
+                        <div className="md:mr-[calc(50%-50vw)] md:pr-[calc(50%-50vw)] overflow-hidden">
+                            <WhyLowerSlider />
+                        </div>
                     </div>
 
                 </div>
             </section>
 
-
+            <section className="tabs-section">
+                <div className="max-w-7xl mx-auto">
+                    <Tabs />
+                </div>
+            </section>
 
 
         </>

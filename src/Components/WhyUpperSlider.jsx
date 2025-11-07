@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 const WhyUpperSlider = () => {
     const BASE = import.meta.env.BASE_URL;
     const cardicon1 = `${BASE}/assets/cardicon1.png`;
+    const cardicon2 = `${BASE}/assets/cardicon2.png`;
     return (
         <>
             <div className="why-slider myGradient flex">
@@ -15,7 +16,7 @@ const WhyUpperSlider = () => {
                 >
 
                     <div className="wrapper flex ">
-                        <div className="w-[411px] pt-6.5 pb-6.5 pr-5 pl-5 border border-[#FFCC86] rounded-xl shadow-[0px_40px_16px_0px_#387FF50D] mr-11">
+                        <div className="w-[411px] pt-6.5 pb-6.5 pr-5 pl-5 border border-[#FFCC86] rounded-xl mr-11">
                             <div className="flex gap-3 mb-3">
                                 <img src={cardicon1} alt="" />
                                 <h6>Light AI help</h6>
@@ -24,10 +25,10 @@ const WhyUpperSlider = () => {
                         </div>
                         <div className="w-[411px] pt-6.5 pb-6.5 pr-5 pl-5 border border-[#387FF5] rounded-xl shadow-[0px_40px_16px_0px_#387FF50D] mr-11">
                             <div className="flex gap-3 mb-3">
-                                <img src={cardicon1} alt="" />
-                                <h6>Light AI help</h6>
+                                <img src={cardicon2} alt="" />
+                                <h6>Low overhead</h6>
                             </div>
-                            <p className="text-[#4B5162] text-[18px] leading-[160%]">Neuros seamlessly integrates with your favorite business tools, CRMs, and platforms. Experience a unified analytics platform that bridges the </p>
+                            <p className="text-[#4B5162] text-[18px] leading-[160%]">In the fast-paced world of business, every second counts. Neuros processes data in real-time, ensuring you're always working  </p>
                         </div>
                     </div>
                 </motion.div>
@@ -48,10 +49,10 @@ const WhyUpperSlider = () => {
                         </div>
                         <div className="w-[411px] pt-6.5 pb-6.5 pr-5 pl-5 border border-[#387FF5] rounded-xl shadow-[0px_40px_16px_0px_#387FF50D] mr-11">
                             <div className="flex gap-3 mb-3">
-                                <img src={cardicon1} alt="" />
-                                <h6>Light AI help</h6>
+                                <img src={cardicon2} alt="" />
+                                <h6>Low overhead</h6>
                             </div>
-                            <p className="text-[#4B5162] text-[18px] leading-[160%]">Neuros seamlessly integrates with your favorite business tools, CRMs, and platforms. Experience a unified analytics platform that bridges the </p>
+                            <p className="text-[#4B5162] text-[18px] leading-[160%]">In the fast-paced world of business, every second counts. Neuros processes data in real-time, ensuring you're always working  </p>
                         </div>
                     </div>
                 </motion.div>

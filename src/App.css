@@ -232,3 +232,14 @@ p{
   font-size: calc(var(--font-size) + 2px);
   line-height: 160%;
 }
+.tabs-section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #4A66D6; 
+}
+.tab-heading{
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: calc(var(--font-size) + 8px);
+  line-height: 125%;
+}

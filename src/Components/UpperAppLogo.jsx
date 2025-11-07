@@ -11,7 +11,7 @@ const UpperAppLogo = () => {
     "GoogleSheets.svg",
     "GoogleSlides.svg",
     "Symbol.svg",
-    "zoom_symbol.png",
+    "zoom_symbol.svg",
   ];
 
   // Prefix with repo base so GH Pages resolves correctly
