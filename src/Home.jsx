@@ -6,7 +6,7 @@ function Home() {
     const DASHBOARD = `${BASE}assets/dashboard.png`;
     const SOLO = `${BASE}/assets/soloImg.png`;
     const ICON = `${BASE}/assets/Icon.svg`;
-    const video_img = `${BASE}/assets/video-img.png`;
+    const video_img = `${BASE}/gitassets/video-img.png`;
     return (
         <>
             <section className="banner-section">
@@ -73,7 +73,7 @@ function Home() {
                     <div className="works-conatainer grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-[997px] mx-auto">
                         <div className="work-wrapper">
                             <div class="relative w-[124px] h-[124px] rounded-[50%] border-white/10 bg-white/10  flex items-center justify-center top-circle">
-                                <img src={ICON} alt="Connect" class=" w-10 h-10 " />
+                                <img src={ICON} alt="Connect" className="w-10 h-10" />
                             </div>
                             <div className=" relative w-[199px] h-[199px] bottom-circle rounded-[50%] border-white/10 bg-white/10 items-center flex justify-center text-center" >
                                 <h5 className="text-white mb-4">Connect</h5>
@@ -82,7 +82,7 @@ function Home() {
                         </div>
                         <div className="work-wrapper">
                             <div className="relative w-[124px] h-[124px] rounded-[50%] border-white/10 bg-white/10  flex items-center justify-center top-circle">
-                                <img src={ICON} alt="Connect" className=" w-10 h-10 " />
+                                <img src={ICON} alt="Connect" className="w-10 h-10" />
                             </div>
                             <div className=" relative w-[199px] h-[199px] bottom-circle rounded-[50%] border-white/10 bg-white/10 items-center flex justify-center text-center" >
                                 <h5 className="text-white mb-4">Pull</h5>
@@ -104,11 +104,13 @@ function Home() {
             <section className="why-section">
                 <div className="container">
                     <div className="grid grid-cols-12">
-                        <div className="col-span-4">
+                        <div className="col-span-12 md:col-span-4">
                             <h2 className="text-black">Why <span>Taskory</span></h2>
                         </div>
-                        <div className="col-span-8 overflow-x-hidden">
-                            <Marquee />
+                        <div className="col-span-12 md:col-span-8">
+                            <div className="w-full md:mr-[calc(50%-50vw)] md:pr-[calc(50%-50vw)] overflow-hidden">
+                                <Marquee />
+                            </div>
                         </div>
                     </div>
                 </div>
