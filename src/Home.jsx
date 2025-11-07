@@ -1,5 +1,6 @@
 import Marquee from "./Components/Marquee";
 import UpperAppLogo from "./Components/UpperAppLogo";
+import WhyUpperSlider from "./Components/WhyUpperSlider";
 
 function Home() {
     const BASE = import.meta.env.BASE_URL;
@@ -115,8 +116,9 @@ function Home() {
                     <div className="col-span-12 md:col-span-8 min-w-0">
                         {/* bleed to viewport edge, but clip inside the section so no x-scroll */}
                         <div className="md:mr-[calc(50%-50vw)] md:pr-[calc(50%-50vw)] overflow-hidden">
-                            <Marquee />
+                            <WhyUpperSlider />
                         </div>
+                        
                     </div>
 
                 </div>

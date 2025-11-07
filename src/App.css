@@ -220,3 +220,15 @@ p{
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.why-slider p {
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: 160%;
+}
+.why-slider h6 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: calc(var(--font-size) + 2px);
+  line-height: 160%;
+}
