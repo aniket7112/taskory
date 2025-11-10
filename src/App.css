@@ -243,3 +243,10 @@ p{
   font-size: calc(var(--font-size) + 8px);
   line-height: 125%;
 }
+.tabs-section .tab-desc{
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: 150%;
+  padding-left: 31px;
+}
