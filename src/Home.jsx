@@ -10,6 +10,7 @@ function Home() {
     const SOLO = `${BASE}/assets/soloImg.png`;
     const ICON = `${BASE}/assets/Icon.svg`;
     const video_img = `${BASE}/assets/video-img.png`;
+    const btn_arrow = `${BASE}/assets/arrow-up-right.png`;
     return (
         <>
             <section className="banner-section">
@@ -62,7 +63,14 @@ function Home() {
                         <div>
                             <h2 className="mb-10">Start solo.<br /> <span>Grow with your team.</span></h2>
                             <p className="mb-10 w-full max-w-[431px]">Taskory began with individuals who needed a clearer day. Now small teams use it to stay aligned with less overhead.</p>
-                            <a className="pt-3 pb-3 pl-9 pr-9 primary-btn" href="#">Get Started</a>
+                            <div className="inline-block btn-group">
+                                <a href="#">
+                                    <div className="flex gap-2 pt-3 pb-3 pl-9 pr-9 primary-btn">
+                                        <span>Get Started</span>
+                                        <img src={btn_arrow} alt="arrow" className="transition-transform duration-300 group-hover:rotate-45"/>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                         <div>
                             <img src={SOLO} alt="" />

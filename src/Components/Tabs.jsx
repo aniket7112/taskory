@@ -1,7 +1,10 @@
 import { memo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+    
+    
 
 const BASE = import.meta.env.BASE_URL;
+const btn_arrow = `${BASE}/assets/arrow-up-right.png`;
 
 const TABS = [
   {
@@ -64,6 +67,7 @@ function Tabs() {
       <div className="mx-auto max-w-7xl px-6 grid grid-cols-12 gap-8">
         {/* Left: Heading + tabs */}
         <div className="col-span-12 md:col-span-6">
+          <div className="banner-top-heading bg-white shadow-[0px_10px_18px_0px_#3A4C921A]">Applications</div>
           <h2 className="text-white mb-10">
             Works with what <br /> you already use.
           </h2>
@@ -104,6 +108,14 @@ function Tabs() {
                 </div>
               );
             })}
+          </div>
+          <div className="inline-block btn-group">
+            <a href="#">
+              <div className="flex gap-2 pt-3 pb-3 pl-9 pr-9 primary-btn mt-10 bg-white shadow-[0px_20px_25px_-5px_#0000001A]">
+                <span>Get Started</span>
+                <img src={btn_arrow} alt="arrow" className="transition-transform duration-300 group-hover:rotate-45" />
+              </div>
+            </a>
           </div>
         </div>
 

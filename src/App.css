@@ -36,6 +36,22 @@ h2{
   display: inline-block;
   box-shadow: 0px 10px 18px 0px #3A4C921A;
   margin-bottom: var(--margin-bottom);
+  padding-left: 40px;
+  position: relative;
+}
+.banner-top-heading::before{
+  content: "";
+  background-image: url(/taskory/assets/AIvector.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 12px;
+  width: 20px;
+  height: auto;
 }
 .banner-subheading{
   font-family: var(--secondary-font);
@@ -63,7 +79,7 @@ p{
   line-height: calc(var(--line-height) + 4px);
   background-color: #F3F5F9;
   border-radius: 26px;
-  display: inline-block;
+  /* display: inline-block; */
   transition: all 0.3s ease-in-out;
 }
 .primary-btn:hover{
@@ -249,4 +265,21 @@ p{
   font-size: var(--font-size);
   line-height: 150%;
   padding-left: 31px;
+}
+.tab-heading.font-semibold{
+  padding-left: 31px;
+  position: relative;
+}
+.tab-heading.font-semibold:before{
+  content: " ";
+  background-image: url(/taskory/assets/arrow.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
