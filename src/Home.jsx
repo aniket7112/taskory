@@ -14,6 +14,7 @@ function Home() {
     const btn_arrow = `${BASE}/assets/arrow-up-right.png`;
     const activelisticon = `${BASE}assets/activelisticon.png`;
     const deadicon = `${BASE}assets/deadicon.png`;
+    const bottomarrow = `${BASE}assets/bottomarrow.png`;
     return (
         <>
             <section className="banner-section">
@@ -23,10 +24,22 @@ function Home() {
                         <h1>Connect. Pull. Plan.</h1>
                         <div className="banner-subheading">Start Ready, Not Reactive.</div>
                         <p>Turns scattered emails, calendars, and insights from tools into one calm daily plan. </p>
-                        <div className="btn-group">
-                            <a href="#">Enter your wrok email</a>
-                            <a href="#">Start Seizing</a>
-                        </div>
+
+                        <form action="" className="form-group flex gap-x-4 text-center justify-center">
+                            <input
+                                type="text"
+                                placeholder="Enter your work email"
+                                class="pt-4 pr-10 pb-4 pl-10 border-2 border-solid border-[#4A66D6] rounded-4xl max-w-[267px] w-full"
+                            />
+                            <div className="inline-block btn-group">
+                                <a href="#">
+                                    <div className="flex gap-2 pt-3.5 pb-3.5 pl-11 pr-11 primary-btn bg-[#FFCC86] text-center text-black shadow-[0px_10px_15px_-3px_#0000001A]">
+                                        <span>Start Seizing</span>
+                                        <img src={btn_arrow} alt="arrow" className="transition-transform duration-300 group-hover:rotate-45" />
+                                    </div>
+                                </a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -164,23 +177,23 @@ function Home() {
                             <h3 className="block text-[#0A0A0A] mb-8">Free Plan Includes</h3>
                             <ul className="mb-8">
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <img className="h-6" src={activelisticon} alt="" />
                                     <p className="text-[#0A0A0A]">Connect up to 2 email accounts</p>
                                 </li>
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <img className="h-6" src={activelisticon} alt="" />
                                     <p className="text-[#0A0A0A]">Calendar sync</p>
                                 </li>
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <img className="h-6" src={activelisticon} alt="" />
                                     <p className="text-[#0A0A0A]">Daily task view & reminders</p>
                                 </li>
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <img className="h-6" src={activelisticon} alt="" />
                                     <p className="text-[#0A0A0A]">Invite up to 2 teammates</p>
                                 </li>
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <img className="h-6" src={activelisticon} alt="" />
                                     <p className="text-[#0A0A0A]">Community resources</p>
                                 </li>
                             </ul>
@@ -193,26 +206,64 @@ function Home() {
                             <h3 className="block text-[#0A0A0A] mb-8">Free Plan Includes</h3>
                             <ul className="mb-8">
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <img className="h-6" src={deadicon} alt="" />
                                     <p className="text-[#0A0A0A]">Connect up to 2 email accounts</p>
                                 </li>
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <img className="h-6" src={deadicon} alt="" />
                                     <p className="text-[#0A0A0A]">Calendar sync</p>
                                 </li>
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <img className="h-6" src={deadicon} alt="" />
                                     <p className="text-[#0A0A0A]">Daily task view & reminders</p>
                                 </li>
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <img className="h-6" src={deadicon} alt="" />
                                     <p className="text-[#0A0A0A]">Invite up to 2 teammates</p>
                                 </li>
                                 <li className="flex gap-x-4 items-center mb-6">
-                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <img className="h-6" src={deadicon} alt="" />
                                     <p className="text-[#0A0A0A]">Community resources</p>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section className="bottom-section bg-[#4A66D6]">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center">
+                        <h2 className="text-white mb-4">Take Your Business to the Next Level</h2>
+                        <p className="text-white mb-10">Dive into the advantages of our CRM platform and witness the impact on your business.</p>
+                        <div className="flex gap-x-7.5 w-full max-w-[437px] items-center justify-between mx-auto mb-10">
+                            <div className="inline-block btn-group">
+                                <a href="#">
+                                    <div className="flex gap-2 pt-3 pb-3 pl-9 pr-9 primary-btn bg-white shadow-[0px_20px_25px_-5px_#0000001A]">
+                                        <span>Join Waitlist Now</span>
+                                        <img
+                                            src={btn_arrow}
+                                            alt="arrow"
+                                            className="transition-transform duration-300 group-hover:rotate-45"
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                            <a className="text-[#F3F5F9] underline underline-offset-4" href="#">Request a Demo</a>
+                        </div>
+                        <div className="flex gap-x-10 w-full max-w-[622px] items-center justify-between mx-auto bottom-list">
+                            <div className="flex items-center gap-x-2">
+                                <img src={bottomarrow} alt="" />
+                                <p className="text-white">14-day free trial</p>
+                            </div>
+                            <div className="flex items-center gap-x-2">
+                                <img src={bottomarrow} alt="" />
+                                <p className="text-white">No credit card required</p>
+                            </div>
+                            <div className="flex items-center gap-x-2">
+                                <img src={bottomarrow} alt="" />
+                                <p className="text-white">Cancel anytime</p>
+                            </div>
                         </div>
                     </div>
 
