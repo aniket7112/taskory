@@ -145,14 +145,14 @@ p{
   line-height: 150%;
   color:#727272;
 }
-.app-container .content h2 span, .solo-section h2 span, .why-section h2 span{
+.app-container .content h2 span, .solo-section h2 span, .why-section h2 span, .price-section h2 span{
     position: relative;
     z-index: 9;
 }
-.why-section h2 span:before{
+.why-section h2 span:before, .price-section h2 span:before{
   background-image: url(/assets/whytext-bg.png)!important;
 }
-.app-container .content h2 span:before, .solo-section h2 span:before, .why-section h2 span:before {
+.app-container .content h2 span:before, .solo-section h2 span:before, .why-section h2 span:before, .price-section h2 span:before  {
     background-image: url(/assets/subheading_bg.png);
     background-size: contain;
     background-position: center;
@@ -164,6 +164,9 @@ p{
     top: 0;
     bottom: 0;
     z-index: -1;
+}
+.price-section h2 span:before{
+  width: 130%;
 }
 .solo-section h2 span:before{
     width: 100%;
@@ -282,4 +285,27 @@ p{
   right: 0;
   bottom: 0;
   left: 0;
+}
+.price-section{
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background: linear-gradient(44.81deg, rgba(255, 248, 233, 0.5372) 55.17%, rgba(255, 255, 255, 0.6794) 95.1%);
+}
+.price-section .badge{
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight);
+  font-size: calc(var(--font-size) - 2px);
+  line-height: calc(var(--line-height) - 8px);
+}
+.price-section h3{
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight);
+  font-size: calc(var(--font-size) + 14px);
+  line-height: calc(var(--line-height) + 12px);
+}
+.price-section li p, .second-btn-group a{
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight);
+  font-size: calc(var(--font-size) + 2px)!important;
+  line-height: calc(var(--line-height) + 4px)!important;
 }

@@ -4,6 +4,7 @@ import UpperAppLogo from "./Components/UpperAppLogo";
 import WhyLowerSlider from "./Components/WhyLowerSlider";
 import WhyUpperSlider from "./Components/WhyUpperSlider";
 
+
 function Home() {
     const BASE = import.meta.env.BASE_URL;
     const DASHBOARD = `${BASE}assets/dashboard.png`;
@@ -11,6 +12,8 @@ function Home() {
     const ICON = `${BASE}/assets/Icon.svg`;
     const video_img = `${BASE}/assets/video-img.png`;
     const btn_arrow = `${BASE}/assets/arrow-up-right.png`;
+    const activelisticon = `${BASE}assets/activelisticon.png`;
+    const deadicon = `${BASE}assets/deadicon.png`;
     return (
         <>
             <section className="banner-section">
@@ -67,7 +70,7 @@ function Home() {
                                 <a href="#">
                                     <div className="flex gap-2 pt-3 pb-3 pl-9 pr-9 primary-btn">
                                         <span>Get Started</span>
-                                        <img src={btn_arrow} alt="arrow" className="transition-transform duration-300 group-hover:rotate-45"/>
+                                        <img src={btn_arrow} alt="arrow" className="transition-transform duration-300 group-hover:rotate-45" />
                                     </div>
                                 </a>
                             </div>
@@ -146,6 +149,73 @@ function Home() {
             <section className="tabs-section">
                 <div className="max-w-7xl mx-auto">
                     <Tabs />
+                </div>
+            </section>
+            <section className="price-section">
+                <div className="max-w-7xl mx-auto">
+                    <div className="mb-10 text-center">
+                        <h2 className="text-black">
+                            <span>Start free</span> <br />Add more when you need it.
+                        </h2>
+                    </div>
+                    <div className="max-w-5xl w-full mx-auto flex gap-x-10 align-middle justify-between">
+                        <div className="bg-white border border-[#387FF5] rounded-xl p-10 shadow-[0px_62px_17px_0px_#387FF50D] w-full">
+                            <div className="badge pt-1.5 pb-1.5 pr-4 pl-4 bg-black text-white rounded-4xl inline-block text-center mb-8">Free Plan</div>
+                            <h3 className="block text-[#0A0A0A] mb-8">Free Plan Includes</h3>
+                            <ul className="mb-8">
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <p className="text-[#0A0A0A]">Connect up to 2 email accounts</p>
+                                </li>
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <p className="text-[#0A0A0A]">Calendar sync</p>
+                                </li>
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <p className="text-[#0A0A0A]">Daily task view & reminders</p>
+                                </li>
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <p className="text-[#0A0A0A]">Invite up to 2 teammates</p>
+                                </li>
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={activelisticon} alt="" />
+                                    <p className="text-[#0A0A0A]">Community resources</p>
+                                </li>
+                            </ul>
+                            <div className="second-btn-group">
+                                <a className="pt-3.5 pb-3.5 bg-[#FFCC86] rounded-4xl block text-center text-black shadow-[0px_10px_15px_-3px_#0000001A]" href="">Start Seizing - Free</a>
+                            </div>
+                        </div>
+                        <div className="bg-[#F9FAFB] w-full border border-solid border-[#E5E7EB] rounded-3xl p-10">
+                            <div className="badge pt-1.5 pb-1.5 pr-4 pl-4 bg-[#E5E7EB] text-[#364153] rounded-4xl inline-block text-center mb-8">Free Plan</div>
+                            <h3 className="block text-[#0A0A0A] mb-8">Free Plan Includes</h3>
+                            <ul className="mb-8">
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <p className="text-[#0A0A0A]">Connect up to 2 email accounts</p>
+                                </li>
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <p className="text-[#0A0A0A]">Calendar sync</p>
+                                </li>
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <p className="text-[#0A0A0A]">Daily task view & reminders</p>
+                                </li>
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <p className="text-[#0A0A0A]">Invite up to 2 teammates</p>
+                                </li>
+                                <li className="flex gap-x-4 items-center mb-6">
+                                    <img className="h-[24px]" src={deadicon} alt="" />
+                                    <p className="text-[#0A0A0A]">Community resources</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
