@@ -1,10 +1,8 @@
 import { memo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-    
-    
 
 const BASE = import.meta.env.BASE_URL;
-const btn_arrow = `${BASE}/assets/arrow-up-right.png`;
+const btn_arrow = `${BASE}assets/arrow-up-right.png`;
 
 const TABS = [
   {
@@ -23,7 +21,7 @@ const TABS = [
     id: "Chat",
     label: "Chat",
     img: `${BASE}assets/automations.png`,
-    desc: "Team chats ",
+    desc: "Team chats",
   },
   {
     id: "Docs",
@@ -67,7 +65,10 @@ function Tabs() {
       <div className="mx-auto max-w-7xl px-6 grid grid-cols-12 gap-8">
         {/* Left: Heading + tabs */}
         <div className="col-span-12 md:col-span-6">
-          <div className="banner-top-heading bg-white shadow-[0px_10px_18px_0px_#3A4C921A]">Applications</div>
+          <div className="banner-top-heading bg-white shadow-[0px_10px_18px_0px_#3A4C921A]">
+            Applications
+          </div>
+
           <h2 className="text-white mb-10">
             Works with what <br /> you already use.
           </h2>
@@ -76,15 +77,15 @@ function Tabs() {
             {TABS.map((tab) => {
               const isActive = active === tab.id;
               return (
-                <div key={tab.id} className="space-y-2">
+                <div key={tab.id} className="space-y-2 cursor-pointer">
                   <button
                     role="tab"
                     aria-selected={isActive}
                     onClick={() => setActive(tab.id)}
                     onKeyDown={(e) => handleKey(e, tab.id)}
-                    className={`w-full text-left rounded-xl transition tab-heading outline-none
-                                text-white focus-visible:ring-2 focus-visible:ring-white/40
-                                ${isActive ? "font-semibold" : "border-transparent"}`}
+                    className={`w-full text-left m-0 cursor-pointer transition tab-heading outline-none text-white focus-visible:ring-2 focus-visible:ring-white/40 ${
+                      isActive ? "font-semibold transform transition-transform duration-500 translate-x-1" : "border-transparent"
+                    }`}
                   >
                     {tab.label}
                   </button>
@@ -98,7 +99,7 @@ function Tabs() {
                         initial="initial"
                         animate="animate"
                         exit="exit"
-                        transition={{ duration: 0.25 }}
+                        transition={{ duration: 0 }}
                         className="text-white text-base leading-relaxed pt-2.5 tab-desc"
                       >
                         {tab.desc}
@@ -109,11 +110,16 @@ function Tabs() {
               );
             })}
           </div>
+
           <div className="inline-block btn-group">
             <a href="#">
               <div className="flex gap-2 pt-3 pb-3 pl-9 pr-9 primary-btn mt-10 bg-white shadow-[0px_20px_25px_-5px_#0000001A]">
                 <span>Get Started</span>
-                <img src={btn_arrow} alt="arrow" className="transition-transform duration-300 group-hover:rotate-45" />
+                <img
+                  src={btn_arrow}
+                  alt="arrow"
+                  className="transition-transform duration-300 group-hover:rotate-45"
+                />
               </div>
             </a>
           </div>
@@ -122,9 +128,8 @@ function Tabs() {
         {/* Right: Image panel */}
         <div className="col-span-12 md:col-span-6">
           <div
-            className="relative overflow-hidden
-                        shadow-[0px_2px_6px_0px_var(--PrimaryAlphaPRA30),0px_13px_12px_0px_var(--PrimaryAlphaPRA05),0px_24px_15px_0px_var(--PrimaryAlphaPRA05),0px_40px_16px_0px_var(--PrimaryAlphaPRA05),0px_62px_17px_0px_var(--PrimaryAlphaPRA05)]
-                        rounded-xl min-h-[360px]"
+            className="relative overflow-hidden shadow-[0px_2px_6px_0px_var(--PrimaryAlphaPRA30),0px_13px_12px_0px_var(--PrimaryAlphaPRA05),0px_24px_15px_0px_var(--PrimaryAlphaPRA05),0px_40px_16px_0px_var(--PrimaryAlphaPRA05),0px_62px_17px_0px_var(--PrimaryAlphaPRA05)]
+                       rounded-xl min-h-[360px]"
           >
             <AnimatePresence mode="wait">
               <motion.img
